@@ -4,11 +4,21 @@ This project aims to relieve the professor of "Tell me when i should slow down o
 
 ---
 
-# Setup
+## RoadMap
 
-## Nuxt 3 Minimal Starter
+- Remove Login requirement for joining sessions
+- Limit Session overview to the Users own Sessions
+- Remove Redis dependency (and change how Sessions are handled)
+- Create an actual Backend for for User credentials (not plain text in a JSON-File)
+- Create the ability to join sessions by QR-Code
+- On User join, request the host to approve
+- Give Host the ability to hide different elements in the session view (e.g. Participants & speed-slider)
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+---
+
+## Setup
+
+This project uses Nuxt for it's frontend.
 
 ### Installation
 
@@ -28,6 +38,8 @@ yarn install
 bun install
 ```
 
+---
+
 ### Development Server
 
 Start the development server on `http://localhost:3000`:
@@ -45,6 +57,8 @@ yarn dev
 # bun
 bun run dev
 ```
+
+---
 
 ### Production
 
@@ -79,5 +93,3 @@ yarn preview
 # bun
 bun run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
