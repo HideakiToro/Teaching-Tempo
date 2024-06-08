@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "bash ./stop-redis.sh && docker run -d --rm --name redis -p 6379:6379 redis && nuxt dev",
+    "dev": "bash ./stop-redis.sh && docker run -d --rm --name redis -p 6379:6379 redis && PORT=8095 nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
